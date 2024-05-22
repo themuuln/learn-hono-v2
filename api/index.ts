@@ -5,7 +5,7 @@ export const config = {
   runtime: 'edge',
 };
 
-const app = new Hono().basePath('/api');
+const app = new Hono().basePath('/api/v1');
 
 app.get('/', (c) => {
   return c.json({
